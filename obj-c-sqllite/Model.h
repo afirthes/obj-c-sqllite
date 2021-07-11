@@ -13,4 +13,10 @@
 - (void) openDB;
 - (void) closeDB;
 
+- (void) addEmployeeWithFirstName:(NSString *)firstName
+                              lastName:(NSString *)lastName
+                                 phone:(NSString *)phone;
+- (void) deleteEmployeeWithID:(NSNumber *)empID;
+- (NSArray *)allEmployees;
+
 @end

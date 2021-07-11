@@ -23,8 +23,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model openDB];
-    [self.model closeDB];
+    // Test code: add an employee, show all employees,
+    // delete the employee, show all employees
+    [self.model addEmployeeWithFirstName:@"Jane" lastName:@"Smith" phone:@"578-555-1212"];
+    NSArray *empArray = [self.model allEmployees];
+    NSLog(@"%@", empArray);
+
+    NSNumber *empID = [[empArray objectAtIndex:0] objectAtIndex:0];
+    [self.model deleteEmployeeWithID:empID];
+    empArray = [self.model allEmployees];
+    NSLog(@"%@", empArray);
 }
 
 

@@ -15,7 +15,7 @@
 		6A034499269AC95200BFEB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A034497269AC95200BFEB87 /* LaunchScreen.storyboard */; };
 		6A03449C269AC95200BFEB87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03449B269AC95200BFEB87 /* main.m */; };
 		6A0344A4269AC99900BFEB87 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0344A3269AC99900BFEB87 /* Model.m */; };
-		6A0344A6269ACA4000BFEB87 /* schema.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A0344A5269ACA4000BFEB87 /* schema.sqlite3 */; };
+		6A0344A8269AD46F00BFEB87 /* db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A0344A7269AD46F00BFEB87 /* db.sqlite3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		6A03449B269AC95200BFEB87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A0344A2269AC99900BFEB87 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		6A0344A3269AC99900BFEB87 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
-		6A0344A5269ACA4000BFEB87 /* schema.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = schema.sqlite3; sourceTree = "<group>"; };
+		6A0344A7269AD46F00BFEB87 /* db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,7 @@
 		6A034488269AC94E00BFEB87 /* obj-c-sqllite */ = {
 			isa = PBXGroup;
 			children = (
+				6A0344A7269AD46F00BFEB87 /* db.sqlite3 */,
 				6A0344A2269AC99900BFEB87 /* Model.h */,
 				6A0344A3269AC99900BFEB87 /* Model.m */,
 				6A034489269AC94E00BFEB87 /* AppDelegate.h */,
@@ -79,7 +80,6 @@
 				6A034497269AC95200BFEB87 /* LaunchScreen.storyboard */,
 				6A03449A269AC95200BFEB87 /* Info.plist */,
 				6A03449B269AC95200BFEB87 /* main.m */,
-				6A0344A5269ACA4000BFEB87 /* schema.sqlite3 */,
 			);
 			path = "obj-c-sqllite";
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0344A8269AD46F00BFEB87 /* db.sqlite3 in Resources */,
 				6A034499269AC95200BFEB87 /* LaunchScreen.storyboard in Resources */,
 				6A034496269AC95200BFEB87 /* Assets.xcassets in Resources */,
-				6A0344A6269ACA4000BFEB87 /* schema.sqlite3 in Resources */,
 				6A034494269AC94E00BFEB87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
