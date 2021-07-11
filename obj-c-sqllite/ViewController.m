@@ -13,9 +13,18 @@
 
 @implementation ViewController
 
+- (Model *)model {
+    if (!_model) {
+        _model = [[Model alloc] init];
+    }
+    return _model;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.model openDB];
+    [self.model closeDB];
 }
 
 
